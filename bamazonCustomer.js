@@ -28,7 +28,7 @@ connection.connect(function(err) {
     if (err) throw err;
     connection.query("SELECT * FROM products", function (err, result, fields) {
       if (err) throw err;
-      console.log(result);
+      console.table(result);
       start();
     });
   });
